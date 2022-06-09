@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Converter</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="topnav">
+        <a href="meterfeet.html">Length </a>
+        <a href="litregallon.html">Volume </a>
+        <a href="kilopounds.html">Mass </a>
+        <a href="main.html" class="split">Home</a>
+      </div> 
+
+    <div  class= "container">
+        <h1>Mass Converter</h1>
+        <div class="bottom">
+        <input autofocus type="text" id="conversion-unit" placeholder="Number" value="">
+        <button id="clearinput"> CLEAR </button>
+    </div>
+
+    <div class="unit">
+        <select id="choosen-unit1">
+            <option value="none" >Choose here</option>
+            <option value="kilo">Kilograms</option>
+            <option value="pounds">Pounds</option>
+        </select>
+        
+        to
+
+        <select id="choosen-unit2">
+            <option value="none" >Choose here</option>
+            <option value="pounds">Pounds</option>
+            <option value="kilo">Kilograms</option>
+        </select>
+        
+        <button type="submit" id="submitbtn" > Submit</button>
+        
+    </div>
+    
+        <p class="error"></p>
+    </div>
+
+    <hr style="width: 50%;">
+
+    <div class="bottom">
+        <div class="answer"> </div>
+        <button id="clear"> CLEAR </button>
+    </div>
+
+    <script src="meterfeet.js"></script>
+  
+</body>
+</html>
